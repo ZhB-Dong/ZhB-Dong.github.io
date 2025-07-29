@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "Brain Tumor Segmentation on BraTS Dataset using UNet"
+subtitle:   " My 1st Unet!"
+date:       2025-07-30 00:00:01
+author:     "ZhB, Dong"
+header-img: " "
+catalog: true
+tags:
+    - Deep Learning
+---
+
 # Brain Tumor Segmentation on BraTS Dataset using UNet
 
 ## ABSTRACT
