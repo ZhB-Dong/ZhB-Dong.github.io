@@ -4,7 +4,7 @@ title:      "在BraTS数据集上使用Unet进行分割"
 subtitle:   "第一个Unet!"
 date:       2025-07-30 00:00:01
 author:     "董占彬"
-header-img: "/../img/_2025-7-29_unet.png"
+header-img: "https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/seg_res.png"
 catalog: true
 tags:
     - Deep Learning

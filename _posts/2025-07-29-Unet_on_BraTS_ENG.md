@@ -19,7 +19,7 @@ This project independently reproduces the classic semantic segmentation model **
 UNet is a popular model for image segmentation and can be considered a classification model. It does not use fully connected layers, so the segmentation map only contains pixels where full context from the input image is available. This allows the model to rely on local semantic cues while reducing interference from distant pixels [[1]](https://arxiv.org/abs/1505.04597).
 
 The network structure is illustrated as follows:  
-![Unet](./figures/fig1-unet.png "Unet")
+![Unet](https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/fig1-unet.png "Unet")
 
 In this work, we independently reproduce the UNet model using PyTorch and train/evaluate it on the **Brain Tumor Image Segmentation (BraTS)** dataset, using **Dice coefficient** and **Sensitivity** as evaluation metrics.
 
@@ -32,7 +32,7 @@ We choose the BraTS dataset, which contains semantically rich medical images:
 | Test Set  | 215               |
 
 The dataset loading and mask generation are implemented using [this blog post](https://zhuanlan.zhihu.com/p/1895864478723186793) (`./Dataset/data.py`). An example image and label are shown below:  
-![Label](./figures/label.png "label")
+![Label](https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/label.png "label")
 
 ## 3. Model
 This project independently reimplements the classic semantic segmentation model **UNet**, originally proposed by Ronneberger et al. in 2015 [[1]](https://arxiv.org/abs/1505.04597).
@@ -78,17 +78,17 @@ Evaluation metrics:
 
 ### 4.4 Training Results and Accuracy
 Loss curve:
-![loss](./figures/loss.png "loss")
+![loss](https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/loss.png "loss")
 
 As shown, the training loss decreases and stabilizes after around `n` epochs. The validation loss starts to rise after epoch 12, suggesting potential overfitting.
 
 Validation Dice and Sensitivity curves:
-![sens](./figures/testDiceSens.png "sens")
+![sens](https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/testDiceSens.png "sens")
 
 Both metrics increase steadily during training but plateau after 12 epochs. Final values approach 0.8, indicating good overlap with ground truth and strong ability to detect tumor regions.
 
 Random prediction results on test samples:
-![Segmentation](./figures/seg_res.png "segmentation")
+![Segmentation](https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/seg_res.png "segmentation")
 
 Red (prediction) and green (ground truth) regions show high overlap. The model accurately distinguishes tumor regions from surrounding brain structures, especially in Subjects A and B.
 
