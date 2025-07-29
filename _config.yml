@@ -1,6 +1,6 @@
 # Site settings
-title: Faxci Blog
-SEOTitle: Faxci的博客 | Faxci Blog
+title: Dong Zhanbin Blog
+SEOTitle: 董占彬的博客 | Dong Zhanbin Blog
 header-img: img/home-bg.jpg
 email: dongzhb2024@shanghaitech.edu.com
 description: # "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
@@ -78,8 +78,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Faxci-yet，大学本科在读，电子电路与单片机爱好者，本网站用于记录本人编程及单片机学习进程中心得收获，本人菜还爱玩了属于是，所以文章中如有发现疏漏还请不吝赐教！ <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
-sidebar-avatar: #/img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Dong, Zhanbin, a Shanghaitech University graduate student major in BME. Interested in Deep learning, vision-language model. <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
+sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
