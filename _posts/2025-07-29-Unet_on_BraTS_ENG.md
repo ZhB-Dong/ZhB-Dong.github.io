@@ -15,6 +15,8 @@ tags:
 ## ABSTRACT
 This project independently reproduces the classic semantic segmentation model **UNet** using the PyTorch framework, and applies it to the **BraTS brain tumor medical imaging dataset** for training and evaluation. Considering that brain tumors are often located near the center of the image, the model is fed with the full image without applying the overlap-tile padding strategy from the original paper. This avoids unnecessary edge interference and memory usage. A **combined loss function of Dice Loss and BCE Loss** is used, which improves sensitivity to small foreground regions while maintaining pixel-level classification accuracy. During training, the loss steadily decreases, and the model achieves high Dice coefficient and Sensitivity on the test set, validating its strong segmentation performance and generalization ability. Additionally, the project implements visualizations of segmentation results to provide an intuitive evaluation of the model’s predictions.
 
+This project is opensource in：[Github](https://github.com/ZhB-Dong/Unet_on_BraTS)
+
 ## 1. Introduction
 UNet is a popular model for image segmentation and can be considered a classification model. It does not use fully connected layers, so the segmentation map only contains pixels where full context from the input image is available. This allows the model to rely on local semantic cues while reducing interference from distant pixels [[1]](https://arxiv.org/abs/1505.04597).
 

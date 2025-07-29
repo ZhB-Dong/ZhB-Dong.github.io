@@ -4,7 +4,7 @@ title:      "在BraTS数据集上使用Unet进行分割"
 subtitle:   "第一个Unet!"
 date:       2025-07-30 00:00:01
 author:     "董占彬"
-header-img: "https://github.com/ZhB-Dong/ZhB-Dong.github.io/raw/d85b9ebc9b7efda048dbcae77a0602726f25b2b1/img/Unet/seg_res.png"
+header-img: "../img/Unet/seg_res.png"
 catalog: true
 tags:
     - Deep Learning
@@ -13,6 +13,8 @@ tags:
 # 在BraTS数据集上使用Unet进行分割
 ## ABSTRACT
 本项目基于经典的语义分割模型 UNet，使用 PyTorch 框架进行了**独立复现**，并在脑部肿瘤医学影像数据集 **BraTS** 上进行了训练和评估。考虑到脑部肿瘤多位于图像中心区域，本项目采用对整幅图像直接输入模型的方法，避免了边缘信息干扰和显存浪费。模型采用了 **Dice Loss 与 BCE Loss 的联合损失函数设计**，既提高了对少数前景区域的敏感性，又保证了像素级分类准确性。在训练过程中，模型的损失稳定下降，最终在测试集上达到了较高的 Dice 系数与 Sensitivity，验证了模型**良好的分割性能和泛化能力**。此外，本文还实现了可视化分割效果，对模型的预测能力进行了直观评估。
+
+本项目已开源在：[Github](https://github.com/ZhB-Dong/Unet_on_BraTS)
 ## 1. Introduction
 Unet 是一种流行的图像分割模型。它可以被视为一种分类模型。该网络不包含全连接层，因此分割图只包含有输入图像中所有有完整可用上下文的像素，这使得对像素的聚类只依靠其周围的语义，减小了更远位置的像素对语义的干扰[[1]](https://arxiv.org/abs/1505.04597)。
 该网络结构如下：
