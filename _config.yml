@@ -15,7 +15,7 @@ future: true
 RSS: false
 weibo_username:     #huxpro
 zhihu_username:     #huxpro
-github_username:    Faxci-yet
+github_username:    ZhB-Dong
 twitter_username:   #huxpro
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
@@ -59,7 +59,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+disqus_username: ZhB
 
 # Netease settings
 netease_comment: false
