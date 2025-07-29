@@ -78,7 +78,7 @@ ga_domain: # huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Dong, Zhanbin, a Shanghaitech University graduate student major in BME. Interested in Deep learning, vision-language model. <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
+sidebar-about-description: "Dong, Zhanbin, a Shanghaitech University graduate student major in BME. Interested in Deep learning, vision-language model. " #<br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
 sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
