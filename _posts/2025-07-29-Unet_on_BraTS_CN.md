@@ -16,7 +16,7 @@ tags:
 ## 1. Introduction
 Unet 是一种流行的图像分割模型。它可以被视为一种分类模型。该网络不包含全连接层，因此分割图只包含有输入图像中所有有完整可用上下文的像素，这使得对像素的聚类只依靠其周围的语义，减小了更远位置的像素对语义的干扰[[1]](https://arxiv.org/abs/1505.04597)。
 该网络结构如下：
-![Unet](./figures/fig1-unet.png "Unet")
+![Unet](../img/Unet/fig1-unet.png "Unet")
 本文将利用python-torch库对Unet模型进行**独立复现**，并在Brain Tumer Image Segmentation (BraTS) 数据集上进行训练和测试。将Dice和Sensitivity作为评价指标。
 
 ## 2. Dataset
@@ -27,7 +27,7 @@ Unet 是一种流行的图像分割模型。它可以被视为一种分类模型
 |Test set|215|
 
 使用[该博客](https://zhuanlan.zhihu.com/p/1895864478723186793)提供的数据集加载程序对数据进行加载以及对标注进行生成(`./Dataset/data.py`)。图像和标注实例如下
-![Label](./figures/label.png "label")
+![Label](../img/Unet/label.png "label")
 
 ## 3. Model
 本项目**独立复现**了Ronneberger等人于2015年提出的一个经典的用于语义分割的模型Unet[[1]](https://arxiv.org/abs/1505.04597)。
@@ -68,15 +68,15 @@ $$Sensitivity = \frac{TP}{TP + FN}$$
 
 ### 4.4 训练结果与准确性评估
 损失下降结果如下
-![loss](./figures/loss.png "loss")
+![loss](../img/Unet/loss.png "loss")
 如图所示损失在n epoch后逐渐稳定，这表示模型在逐渐收敛。测试集loss在12epoch后上升趋势，这表明模型在此后可能出现过拟合。
 
 模型在测试集上的Dice和Sensitivity指标随着模型训练的变化如下
-![sens](./figures/testDiceSens.png "sens")
+![sens](../img/Unet/testDiceSens.png "sens")
 如图所示，在模型训练过程中，Dice和Sensitivity均体现了逐渐上升的趋势，但在12epoch后上升趋势逐渐减缓，这表明在当前学习率下模型已基本完成对label的学习。Dice和Sensitivity均接近0.8，这表明模型的分类性能较好：分类的预测结果即和标签重合度较高，同时前景被预测出的比例也较高。
 
 在测试集上随机数据的分割效果展示如下
-![Segmentation](./figures/seg_res.png "segmentation")
+![Segmentation](../img/Unet/seg_res.png "segmentation")
 
 如图所示红色区域和绿色的区域的重合度较高，同时分割的区域基本覆盖了病变区域，这表明模型学习到了病变上下文的语义信息。在Subject A和B中的预测结果更少地覆盖了为病变但是被划分近标注中的大脑结构，这表明相对于大脑结构，模型更对病变区域更加敏感，因此模型可以更准确地区分大脑的正常结构和病变结构。
 
