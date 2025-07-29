@@ -17,7 +17,7 @@ tags:
 Unet 是一种流行的图像分割模型。它可以被视为一种分类模型。该网络不包含全连接层，因此分割图只包含有输入图像中所有有完整可用上下文的像素，这使得对像素的聚类只依靠其周围的语义，减小了更远位置的像素对语义的干扰[[1]](https://arxiv.org/abs/1505.04597)。
 该网络结构如下：
 <!-- ![Unet](../img/Unet/fig1-unet.png "Unet") -->
-![Unet](https://github.com/ZhB-Dong/ZhB-Dong.github.io/blob/master/img/Unet/fig1-unet.png "Unet")
+![Unet](/../img/_2025-7-30_unet.png "Unet")
 本文将利用python-torch库对Unet模型进行**独立复现**，并在Brain Tumer Image Segmentation (BraTS) 数据集上进行训练和测试。将Dice和Sensitivity作为评价指标。
 
 ## 2. Dataset
