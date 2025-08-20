@@ -3,7 +3,7 @@ layout:     post
 title:      "Hello github"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2021-07-25 22:24:00
-author:     "Faxci"
+author:     "ZhB, Dong"
 header-img: " "
 catalog: true
 tags:
@@ -14,5 +14,5 @@ tags:
 > “Yeah It's on. ”
 
 
-Faxci 的 Blog 就这么开通了。
+Dong 的 Blog 就这么开通了。
 
